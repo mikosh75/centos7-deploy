@@ -11,6 +11,8 @@ yum -y update
 yum -y install open-vm-tools htop vim zabbix-agent net-tools
 systemctl start vmtoolsd
 systemctl enable vmtoolsd
+systemctl start zabbix-agent
+systemctl enable zabbix-agent
 mkdir ~/.ssh
 touch ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
